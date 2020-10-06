@@ -5,9 +5,9 @@ jobs:
       - image: cimg/node:14.13.0
     steps:
       - checkout
-      - node --version
-      - npm install
-      - npm run test
+      - run: node --version
+      - run: npm install
+      - run: npm run test
 
 workflows:
   build_and_test:
