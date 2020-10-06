@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: node --version
       - run: npm install
-      - run: npm run test
+      - run: npm run test -- --record --key 52cc57a1-e3a8-4c60-b1f5-c12d300e5398
 
 workflows:
   build_and_test:
