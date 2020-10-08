@@ -3,7 +3,7 @@ describe('example.com', () => {
 		cy.visit('https://example.com')
 	})
 
-	it('has Example Domain as header', () => {
+	it('has Example Domain as header2', () => {
 		
 		cy.get('h1').should('contain', 'Example Domain')
 	})
@@ -12,6 +12,8 @@ describe('example.com', () => {
 		cy.get('a')
 		.should('contain', 'More information...')
 		.and('have.attr', 'href', 'https://www.iana.org/domains/example')
+
+		cy.noop()
 	})
 
 	describe('text', () => {
@@ -20,16 +22,14 @@ describe('example.com', () => {
 		})
 
 		it('a', () => {
-
+			// asdf
 		})
 
 		it('b', () => {
 
 		})
 
-		it('c', () => {
-
-		})
+		it('d', () => {})
 	})
 
 })
