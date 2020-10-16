@@ -4,7 +4,7 @@ describe('example.com', () => {
 	})
 
 	it('has Example Domain as header2', () => {
-		
+
 		cy.get('h1').should('contain', 'Example Domain')
 	})
 
@@ -12,13 +12,11 @@ describe('example.com', () => {
 		cy.get('a')
 		.should('contain', 'More information...')
 		.and('have.attr', 'href', 'https://www.iana.org/domains/example')
-
-		cy.noop()
 	})
 
 	describe('text', () => {
 		beforeEach(() => {
-			cy.wait(2000)
+			cy.wait(3000)
 		})
 
 		it('a', () => {
